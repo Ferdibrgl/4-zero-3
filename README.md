@@ -1,7 +1,7 @@
-<a href="https://www.buymeacoffee.com/medheeraj"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=medheeraj&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"></a>
+
 
 [![License](https://img.shields.io/badge/license-MIT-_red.svg)](https://opensource.org/licenses/MIT)
-![Follow on Twitter](https://img.shields.io/twitter/follow/Dheerajmadhukar?style=social)
+
 
 ### >_ Introduction
 
@@ -60,4 +60,4 @@ If you like `4-ZERO-3` and it help you in work, money/bounty, pentesting, recon 
 :stop_sign:   **Please avoid opening GitHub issues for support requests or questions!**
 buy me a beer to keep me powered :)
 
-<a href="https://www.buymeacoffee.com/medheeraj" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a beer&emoji=🍺&slug=medheeraj&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Beer"></a>
+&s0
