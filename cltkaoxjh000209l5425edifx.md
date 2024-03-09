@@ -202,7 +202,7 @@ These event logs could be found at
 
 **Volatility — Memory Analysis** -
 
-<table><tbody><tr><td colspan="1" rowspan="1"><p><code>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</code></p></td><td colspan="1" rowspan="1"><p><code># Determine the suggested profile for analysis volatility -f memdump.mem imageinfo # Print a list of processes to the terminal volatility -f memdump.mem --profile=&lt;PROFILE&gt; pslist # Print a process tree to the terminal volatility -f memdump.mem --profile=&lt;PROFILE&gt; pstree # View command line of the specific process with PID XXXX volatility -f /path/to/file.mem --profile=PROFILE dlllist -p XXXX # Print all available processes, including hidden ones often used by malware volatility -f memdump.mem --profile=&lt;PROFILE&gt; psscan # Dumping the process with a specific PID XXXX volatility -f /path/to/file.mem --profile=PROFILE procdump -p XXXX -D /home/ubuntu/Desktop # Print expected and hidden processes volatility -f memdump.mem --profile=&lt;PROFILE&gt; psxview # View any active or closed network connections volatility -f memdump.mem --profile=&lt;PROFILE&gt; netscan # Create a timeline of events from the memory image volatility -f memdump.mem --profile=&lt;PROFILE&gt; timeliner # Pull internet browsing history volatility -f memdump.mem --profile=&lt;PROFILE&gt; iehistory # Identify any files on the system from the memory image volatility -f memdump.mem --profile=&lt;PROFILE&gt; filescan # Retrieve files from the memory image volatility -f memdump.mem --profile=&lt;PROFILE&gt; dumpfiles -n --dump-dir=&lt;path-to-dump&gt;</code></p></td></tr></tbody></table>
+<table><tbody><tr><td colspan="1" rowspan="1"><p></p></td><td colspan="1" rowspan="1"><p><code># Determine the suggested profile for analysis volatility -f memdump.mem imageinfo # Print a list of processes to the terminal volatility -f memdump.mem --profile=&lt;PROFILE&gt; pslist # Print a process tree to the terminal volatility -f memdump.mem --profile=&lt;PROFILE&gt; pstree # View command line of the specific process with PID XXXX volatility -f /path/to/file.mem --profile=PROFILE dlllist -p XXXX # Print all available processes, including hidden ones often used by malware volatility -f memdump.mem --profile=&lt;PROFILE&gt; psscan # Dumping the process with a specific PID XXXX volatility -f /path/to/file.mem --profile=PROFILE procdump -p XXXX -D /home/ubuntu/Desktop # Print expected and hidden processes volatility -f memdump.mem --profile=&lt;PROFILE&gt; psxview # View any active or closed network connections volatility -f memdump.mem --profile=&lt;PROFILE&gt; netscan # Create a timeline of events from the memory image volatility -f memdump.mem --profile=&lt;PROFILE&gt; timeliner # Pull internet browsing history volatility -f memdump.mem --profile=&lt;PROFILE&gt; iehistory # Identify any files on the system from the memory image volatility -f memdump.mem --profile=&lt;PROFILE&gt; filescan # Retrieve files from the memory image volatility -f memdump.mem --profile=&lt;PROFILE&gt; dumpfiles -n --dump-dir=&lt;path-to-dump&gt;</code></p></td></tr></tbody></table>
 
 ## **Security Information and Event Management**
 
@@ -239,70 +239,70 @@ Using **Wireshark** to analyze network traffic capture files including, `.pcap`,
 
 * List network configuration information in local system
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>ipconfig /all</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>ipconfig /all</code></p></td></tr></tbody></table>
     
 * Print a list of running processes and programs
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>tasklist</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>tasklist</code></p></td></tr></tbody></table>
     
 * Display running processes and associated binary file that was executed to create the process
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>wmic process get description, executablepath</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>wmic process get description, executablepath</code></p></td></tr></tbody></table>
     
 * Print a list of all local system users
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>net user</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>net user</code></p></td></tr></tbody></table>
     
 * Print a list of all users that are resided in an administrators user group
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>net localgroup administrators</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>net localgroup administrators</code></p></td></tr></tbody></table>
     
 * Print all users reside in a RDP group
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>net localgroup "Remote Desktop Users"</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>net localgroup "Remote Desktop Users"</code></p></td></tr></tbody></table>
     
 * List all services and detailed information about each one
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>sc query | more</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>sc query | more</code></p></td></tr></tbody></table>
     
 * List all open ports on a system
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>netstat -ab</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>netstat -ab</code></p></td></tr></tbody></table>
     
 
 ### **Powershell to help extracted valuable information**
 
 * To get network-related information from the system
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1 2</p></td><td colspan="1" rowspan="1"><p>Get-NetIPConfiguration Get-NetIPAddress</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p></p></td><td colspan="1" rowspan="1"><p><code>Get-NetIPConfiguration Get-NetIPAddress</code></p></td></tr></tbody></table>
     
 * List all local users on the system
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1 2 3</p></td><td colspan="1" rowspan="1"><p>Get-LocalUser # To get more information about a specific user Get-LocalUser -Name BTLO | select *</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p></p></td><td colspan="1" rowspan="1"><p><code>Get-LocalUser # To get more information about a specific user Get-LocalUser -Name BTLO | select *</code></p></td></tr></tbody></table>
     
 * To identify running services on the system and show the results in a nice windows
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>Get-Service | where Status -eq "Running" | Out-GridView</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>Get-Service | where Status -eq "Running" | Out-GridView</code></p></td></tr></tbody></table>
     
 * List the running processes and group it by their priority value
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>Get-Process | Format-Table -View priority</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>Get-Process | Format-Table -View priority</code></p></td></tr></tbody></table>
     
 * Get specific information from a service
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1 2 3 4</p></td><td colspan="1" rowspan="1"><p># specific information by including their name Get-Process -Name 'namehere' # specific information by including their id and piping for collected all properties Get-Process -Id 'idhere' | Select *</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p></p></td><td colspan="1" rowspan="1"><p><code># specific information by including their name Get-Process -Name 'namehere' # specific information by including their id and piping for collected all properties Get-Process -Id 'idhere' | Select *</code></p></td></tr></tbody></table>
     
 * List tasks that are set to run after certain conditions are met
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>Get-ScheduledTask</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>Get-ScheduledTask</code></p></td></tr></tbody></table>
     
 * Dig more deeper by specifying the task we’re interested in and piping for all properties
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>Get-ScheduledTask -TaskName 'PutANameHere' | Select *</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>Get-ScheduledTask -TaskName 'PutANameHere' | Select *</code></p></td></tr></tbody></table>
     
 * Change the Execution Policy applied to specific user
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>Set-ExecutionPolicy Bypass -Scope CurrentUser</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>Set-ExecutionPolicy Bypass -Scope CurrentUser</code></p></td></tr></tbody></table>
     
 
 1. **DeepBlueCLI** is a tool that was created by SANS to aid the investigation and triage of Windows Event Logs
@@ -310,11 +310,11 @@ Using **Wireshark** to analyze network traffic capture files including, `.pcap`,
 
 * Run the command to a specific local log file
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p>./DeepBlue.ps1 ../Log1.evtx</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p>1</p></td><td colspan="1" rowspan="1"><p><code>./DeepBlue.ps1 ../Log1.evtx</code></p></td></tr></tbody></table>
     
 * Run the command to analyze the system we are currently on
     
-    <table><tbody><tr><td colspan="1" rowspan="1"><p>1 2 3 4</p></td><td colspan="1" rowspan="1"><p># to analyze a live security log ./DeepBlue.ps1 -log security # to analyze a live system log ./DeepBlue.ps1 -log system</p></td></tr></tbody></table>
+    <table><tbody><tr><td colspan="1" rowspan="1"><p></p></td><td colspan="1" rowspan="1"><p><code># to analyze a live security log ./DeepBlue.ps1 -log security # to analyze a live system log ./DeepBlue.ps1 -log system</code></p></td></tr></tbody></table>
     
 
 ## **Appendix A — Logs Information Details**
